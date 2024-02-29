@@ -16,6 +16,7 @@ header {
 
 header h1{
     color: white;
+    font-size: 3rem;
 }
 
 nav button {
@@ -26,6 +27,7 @@ nav button {
     color: white;
     margin: 0 10px;
     letter-spacing: 5px;
+    font-size: 20px;
 }
 
 nav button:hover {
@@ -40,3 +42,29 @@ nav button:hover {
     width: 100vw;
 }
 
+#content h2 {
+    text-align: center;
+    font-weight: 800;
+    margin: 40px;
+    font-size: 3rem;
+    display: inline-block; /* Ensures the line is positioned relative to the text */
+    position: relative; /* Required for absolute positioning of the line */
+}
+
+
+.line {
+    width: 210px; /* Set the width of the line */
+    height: 5px; /* Set the thickness of the line */
+    background-color: black; /* Set the color of the line */
+    position: absolute;
+    bottom: -260px;
+    left: 42px;
+}
+
+
+#content p {
+    margin-top: 10px;
+    padding: 30px;
+    line-height: 2rem;
+    font-size: 18px;
+}
