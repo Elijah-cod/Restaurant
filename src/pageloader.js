@@ -1,7 +1,6 @@
 // pageLoader.js
-
 export function initializePage() {
-    // Your initialization code here
-    console.log("Page initialized");
-  }
+    const header = document.querySelector('.header')
+    header.classList.remove('hidden')
+}
   
