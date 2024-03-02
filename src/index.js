@@ -2,7 +2,7 @@
 import { initializePage } from './pageloader.js';
 import './style.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-
+import { greet } from './about.js';
 
 // Call the initializePage function when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -19,4 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.querySelector('.sidebar')
     sidebar.style.display = 'none'
   })
+  
+  greet()
 });
