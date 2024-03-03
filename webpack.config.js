@@ -1,10 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: {
-    main: './src/index.js', // Your main entry point
-    module: './src/about.js' // Your new module entry point
-  },
+  entry: './src/index.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
