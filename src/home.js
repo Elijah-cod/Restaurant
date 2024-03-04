@@ -1,8 +1,7 @@
-export function about() {
+export function home() {
     const content = document.getElementById ('content')
-    content.classList.add('hidden')
+    content.classList.remove('hidden')
 
     const about = document.getElementById('about')
-    about.classList.remove('hidden')
+    about.classList.add('hidden')
 }
-  

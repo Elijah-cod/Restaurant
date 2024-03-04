@@ -2,7 +2,8 @@
 import { initializePage } from './pageloader.js';
 import './style.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import { greet } from './about.js';
+import {about} from './about.js';
+import {home} from './home.js';
 
 // Call the initializePage function when the DOM content is loaded
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,5 +21,24 @@ document.addEventListener('DOMContentLoaded', () => {
     sidebar.style.display = 'none'
   })
   
-  greet()
+  const buttons = document.querySelectorAll('button')
+
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+      const clickedButton = event.target
+
+      switch(clickedButton.textContent){
+        case 'Home':
+            home()
+          break;
+        
+        case 'Menu':
+          console.log('Menu button was clicked!')
+          break;  
+
+        default:
+          about();
+      }
+    })
+  })
 });
