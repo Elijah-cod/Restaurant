@@ -134,9 +134,100 @@ nav button:hover {
 }
 
 
-/* #about .story {
-    margin-top: 500;
-} */
+#about .story{
+    display: flex;
+    margin-top: 30px;
+    padding: 40px;
+    gap: 40px;
+}
+
+.story h3{
+    width: 40%;
+    align-self: center;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#about .philosophy {
+    padding: 40px;
+}
+
+.philosophy h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#about .chef {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.chef img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.chef h3{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#about .team{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.team h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+#about .community{
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+}
+
+.community img {
+    height: 150px;
+    width: 250px;
+    box-shadow: -1px 3px 26px 24px rgba(0,0,0,0.53);
+-webkit-box-shadow: -1px 3px 26px 24px rgba(0,0,0,0.53);
+-moz-box-shadow: -1px 3px 26px 24px rgba(0,0,0,0.53);
+}
+
+.community h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about .visit{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    gap: 40px;
+}
+
+.visit iframe {
+    height: 150px;
+    width: 250px;
+}
+
+.visit h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 
 
 
@@ -153,11 +244,59 @@ nav button:hover {
     .header .fa-bars {
         display: block;
     }
+
+
+    /* Home page */
+    #content img{
+        height: auto;
+    }
+    #content h2 {
+        line-height: 70px;
+        margin-bottom: 10px;
+    }
+    #content .line{
+        display: none;
+    }
+
+
+    /* About page */
+    #about .heading{
+        height: 100px;
+    }
+
+    #about .chef {
+        flex-direction: column;
+    }
+
+    .chef img {
+        height: auto;
+        width: 100%;
+        border-radius: 50%;
+    }
+
+    #about .community img{
+        display: none;
+    }
+
+    #about .visit {
+        flex-direction: column;
+    }
+
+    .visit iframe {
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
     .sidebar {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 1024px){
+    #about .heading {
+        height: 250px;
     }
 }
 
