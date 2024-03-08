@@ -112,10 +112,6 @@ nav button:hover {
 
 /* About us section */
 
-#about {
-    height: 100vh;
-    width: 100%;
-}
 
 #about .heading{
     background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');
@@ -260,11 +256,12 @@ nav button:hover {
 }
 
 
-
-
-
-
-
+footer {
+    background-color: rgba(0, 0, 0, 1);
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
 
 
 
