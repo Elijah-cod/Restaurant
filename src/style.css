@@ -265,6 +265,54 @@ footer {
 
 
 
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.about-us,
+.terms-and-privacy,
+.accessibility-info,
+.additional-links,
+.newsletter-signup {
+    margin-top: 20px;
+}
+
+.newsletter-signup form {
+    margin-top: 10px;
+}
+
+.newsletter-signup input[type="email"],
+.newsletter-signup button {
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.newsletter-signup button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.newsletter-signup button:hover {
+    background-color: #0056b3;
+}
 
 
 
