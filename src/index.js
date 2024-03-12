@@ -10,6 +10,8 @@ import {serving} from './serving.js';
 document.addEventListener('DOMContentLoaded', () => {
   initializePage();
 
+  document.getElementById('currentYear').textContent = new Date().getFullYear();
+
   const menu = document.querySelector('.fa-bars');
   menu.addEventListener('click', ()=>{
     const sidebar = document.querySelector('.sidebar')
