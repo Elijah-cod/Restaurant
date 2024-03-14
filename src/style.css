@@ -267,7 +267,7 @@ footer {
     'left middle right'
     'bottom bottom bottom';
     grid-template-rows: 1fr 1fr; /* Three rows: top, middle, bottom */
-    grid-template-columns: 1fr 2fr auto; /* Single column */
+    grid-template-columns: 1fr 1fr 1fr; /* Single column */
     height: 300px; /* Set the height of the container */
     gap: 20px;
 }
@@ -275,10 +275,14 @@ footer {
 
 .left-side {
     grid-area: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .middle {
     grid-area: middle;
+    text-align: center;
 }
 
 
@@ -287,11 +291,90 @@ footer {
 }
 
 .bottom {
+    margin-top: 20px;
+    bottom: 0;
     grid-area: bottom;
 }
 
 
 
+
+footer .left-side, .middle{
+    width: 100%;
+}
+
+.newsletter-signup p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.newsletter-signup form {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+form input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 0;
+    width: 200px;
+}
+
+form button {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0); /* Adjust the last value (alpha) for transparency */
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+form button:hover {
+    cursor: pointer;
+    border: 0;
+}
+
+.end {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+footer .middle {
+    margin: 0 auto;
+}
+
+
+.middle div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    line-height:30px;
+    justify-content: center;
+}
+
+.middle h3{
+    margin-bottom: 10px;
+}
+
+.right-side{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side .fa-brands:hover {
+    font-size: 2rem;
+    cursor: pointer;
+}
 
 
 
@@ -359,6 +442,13 @@ footer {
 
     #serving img{
         width: 100%;
+    }
+
+    footer{
+        height: 500px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 }
 
