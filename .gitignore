@@ -10,7 +10,6 @@ npm-debug.log*
 .env
 
 # Ignore any build output
-dist/
 build/
 
 # Ignore macOS system files
